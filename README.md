@@ -21,7 +21,7 @@ This module assumes a knowledge of functions that is standard in precalculus cou
 **`derivativeDefinition.mlx`**
 An interactive script that facilitates exploration of the limit definition of the derivative and the relationship between slopes and derivatives. 
 
-<img src="https://user-images.githubusercontent.com/88841524/133293637-b133ac39-394e-4f1a-a7a9-6f4641d9867c.gif" width="500">
+<img src="https://user-images.githubusercontent.com/88841524/133808342-49edbbd4-d381-4c63-bd2c-64c485728c71.gif" width="500">
 
 **Learning Goals:**
 - Explain the limit definition of the derivative and its relationship to secant lines
