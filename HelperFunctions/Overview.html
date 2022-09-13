@@ -1,0 +1,448 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Calculus: Derivatives</title><meta name="generator" content="MATLAB 9.12"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2022-09-12"><meta name="DC.source" content="Overview.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Calculus: Derivatives</h1><p>
+<span style="font-family:Arial">
+<span style="font-size:12pt">
+<h2> Information </h2>
+This curriculum module contains interactive
+<a href="https://www.mathworks.com/products/matlab/live-editor.html">MATLAB&reg; live scripts</a>
+that teach fundamental concepts and basic terminology related to derivative calculus.
+    There is a focus on numerical approximation and graphical representation as tools for
+    understanding the concepts of calculus.
+<br>
+<br>
+<a href=#module>Calculus: Derivatives</a> covers the
+    <a href=#script1>limit definition of the derivative</a>, the <a href=#script2> power rule </a> and linearity,
+    <a href=#script3>derivatives of transcendental functions </a> such as sines and exponentials, the <a href=#script4>
+    product and chain rule </a> for derivatives, and approximations by <a href=#script5> Taylor polynomials </a> including
+    tangent lines. Applications include parabolic motion, population growth, and oscillatory behavior. There is
+    also a <a href=#app> Calculus Flashcards </a> app.
+<br>
+<br>
+You can use these live scripts as lecture demonstrations, class activities,
+or interactive assignments outside class. The module is divided into five interactive scripts and one app.
+<br>
+<br>
+The instructions inside the live scripts will guide you through the exercises and activities.
+Get started with each live script by running it one section at a time. To stop running the script
+or a section midway (for example, when an animation is in progress), use the <img src="../Images/end_24.png" height="16" style="vertical-align:top"> Stop button in the
+RUN section of the Live Editor tab in the MATLAB Toolstrip.
+<br><br>
+You can start the app from this page or by right-clicking `CalculusFlashcards.mlapp` in
+    the Current Folder pane and selecting "Run".
+<br>
+If you find an issue or have a suggestion, email the MathWorks online teaching team at
+<a href="mailto:onlineteaching@mathworks.com">onlineteaching@mathworks.com</a>.
+<br>
+<br>
+<h2> Related Courseware Modules </h2>
+<ol>
+    <li> Calculus: Integrals, available on <a href="https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals">
+        GitHub</a> or <a href="https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals">
+        <img src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg"> </a> or
+        <a href="https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj">
+        <img src="https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg"></a>
+    </li>
+</ol>
+<h2> Prerequisites </h2>
+Mathematically, this module assumes a knowledge of functions that is standard in precalculus course materials
+        regarding powers, exponentials, absolute values, logarithms, sines, cosines, rational functions, and
+        asymptotes. In addition, this module assumes basic fluency with limits in discussing the limit
+        definition of the derivative.
+<br><br>
+Minimal MATLAB fluency is required to use this module; primarily it is standard calculator-type mathematics
+        such as using * for multiplication and / for division. For commands that go beyond interacting with
+        a calculator, the necessary knowledge is included in the module. If you want to improve your MATLAB
+        knowledge, <a href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">MATLAB
+Onramp</a> is a free two-hour introductory tutorial that teaches the essentials of MATLAB.
+<br>
+<br>
+<h2> Getting Started </h2>
+<ol>
+    <li>
+        Make sure that you have all the required products (listed below)
+        installed. If you are missing a product, add it using the
+        <a href="https://www.mathworks.com/products/matlab/add-on-explorer.html">
+            Add-On Explorer.</a> To install an add-on, go to the <b>Home</b>
+        tab and select <img src="../Images/add-ons.png" style="margin:0px;" height=12> <b> Add-Ons > Get Add-Ons</b>.
+    </li>
+        <li>
+            Get started with each topic by clicking the link in the first column of the table below to access the
+            full script example. The instructions inside each live script will walk
+            you through the live scripts and related functions.
+        </li>
+</ol>
+<h2> Products </h2>
+    MATLAB&reg; and the Symbolic Math Toolbox&trade; are used throughout. Tools from the Curve Fitting Toolbox&trade; are used in <code>derivativeRulesTranscendentals.mlx</code>.
+<br>
+<br>
+<h2> <a name="module"; style = "text-decoration: none; color: inherit">Scripts</a> </h2>
+<table border=1 style="margin-left:20px; cellpadding:15px;">
+    <caption><h3>Organization of the Calculus: Derivatives Module</h3></caption>
+    <tr>
+        <th scope="col">Topic
+        </th>
+        <th scope="col">In this script, students will...
+        </th>
+    </tr>
+    <tr>
+        <th scope="row">
+            <a name="script1"; href="matlab:edit derivativeDefinition.mlx;"><b>Definition of the Derivative</b>
+             <br>
+            <img src = "../Images/SecantTangent2.gif" width=150 style="margin-top:5px; margin-bottom:0px">
+            </a>
+        </th>
+        <td>
+            <ul style="margin-top:5px; margin-bottom:10px">
+                <li> explain the limit definition of the derivative and its relationship to secant lines.</li>
+                <li> identify the sign of the derivative at a point as positive, negative, or zero
+                    based on the graph of a function. </li>
+                <li> identify points where the derivative of a continuous function does not exist
+                    and explain why with reference to the definition of the derivative.</li>
+                <li> recognize equivalent notation for the derivative. </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <a name="script2"; href="matlab:edit derivativeRulesPowers.mlx;"><b>Power Rule for Derivatives</b>
+             <br>
+            <img src = "../Images/DQsm.png" width=190 style="margin-top:5px; margin-bottom:0px">
+            </a>
+        </th>
+        <td>
+            <ul style="margin-top:5px; margin-bottom:10px">
+                <li> explain why the limit definition of the derivative results in the power rule for derivatives.</li>
+                <li> compute the derivatives of linear combinations of powers by hand.</li>
+                <li> apply derivatives to solve practical questions.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <a name="script3"; href="matlab:edit derivativeRulesTranscendentals.mlx;"><b>Derivatives of Transcendental Functions</b>
+             <br>
+            <img src = "../Images/DerivativeOfSine.png" width=150 style="margin-top:5px; margin-bottom:0px">
+            </a>
+        </th>
+        <td>
+            <ul style="margin-top:5px; margin-bottom:10px">
+                <li> determine the functional relationship of the derivatives of sines, cosines, exponentials, and natural logarithms.</li>
+                <li> explain the pattern in the derivatives of sines, cosines, exponentials, and natural logarithms.</li>
+            <li> apply the correct units to derivatives of any order. </li>
+<li> explore simple first- and second-order differential equations that describe a physical system and use them to create mathematical models of the system. </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <a name="script4"; href="matlab:edit derivativeRulesCombinations.mlx;"><b>Chain Rule and Product Rule</b>
+             <br>
+            <img src = "../Images/productRuleIcon.png" width=150 style="margin-top:5px; margin-bottom:0px">
+            </a>
+        </th>
+        <td>
+            <ul style="margin-top:5px; margin-bottom:10px">
+                <li>explain why the derivative of f of g of x with respect to x is
+                    the derivative of f with respect to g times the derivative of g with respect to x.</li>
+                <li> apply the chain rule to calculate derivatives.</li>
+                <li> explain why the derivative of f*g is the (derivative of f) times g plus the
+                    (derivative of g) times f.</li>
+                <li> apply the product rule to calculate derivatives.</li>
+                <li> practice fluently recognizing and applying the rules for computing derivatives. </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <a name="script5"; href="matlab:edit TaylorPolynomials.mlx;"><b>Approximation using Taylor Polynomials</b>
+             <br>
+            <img src = "../Images/taylorpolyexample.gif" width=150 style="margin-top:5px; margin-bottom:0px">
+            </a>
+        </th>
+        <td>
+            <ul style="margin-top:5px; margin-bottom:10px">
+                <li>compute tangent lines.</li>
+                <li> compute quadratic approximations.</li>
+                <li> compute higher order polynomial approximations. </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <a name="app"; href="matlab:run CalculusFlashcards.mlapp;"><b>Calculus Flashcards</b>
+             <br>
+            <img src = "../Images/CalcFlashcardsPractice.png" width=150 style="margin-top:5px; margin-bottom:0px">
+            </a>
+        </th>
+        <td>
+            <ul style="margin-top:5px; margin-bottom:10px">
+                <li> practice recognizing and solving standard computational problems in calculus. </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<br>
+</span>
+</span>
+</p><p>Copyright 2021-2022 The MathWorks&#8482;, Inc.</p><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2022a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Calculus: Derivatives
+% <html>
+% <span style="font-family:Arial">
+% <span style="font-size:12pt">
+% <h2> Information </h2>
+% This curriculum module contains interactive
+% <a href="https://www.mathworks.com/products/matlab/live-editor.html">MATLAB&reg; live scripts</a>
+% that teach fundamental concepts and basic terminology related to derivative calculus. 
+%     There is a focus on numerical approximation and graphical representation as tools for 
+%     understanding the concepts of calculus. 
+% <br>
+% <br>
+% <a href=#module>Calculus: Derivatives</a> covers the
+%     <a href=#script1>limit definition of the derivative</a>, the <a href=#script2> power rule </a> and linearity, 
+%     <a href=#script3>derivatives of transcendental functions </a> such as sines and exponentials, the <a href=#script4>
+%     product and chain rule </a> for derivatives, and approximations by <a href=#script5> Taylor polynomials </a> including
+%     tangent lines. Applications include parabolic motion, population growth, and oscillatory behavior. There is 
+%     also a <a href=#app> Calculus Flashcards </a> app.
+% <br>
+% <br>
+% You can use these live scripts as lecture demonstrations, class activities,
+% or interactive assignments outside class. The module is divided into five interactive scripts and one app.
+% <br>
+% <br>
+% The instructions inside the live scripts will guide you through the exercises and activities.
+% Get started with each live script by running it one section at a time. To stop running the script
+% or a section midway (for example, when an animation is in progress), use the <img src="../Images/end_24.png" height="16" style="vertical-align:top"> Stop button in the
+% RUN section of the Live Editor tab in the MATLAB Toolstrip.
+% <br><br>
+% You can start the app from this page or by right-clicking `CalculusFlashcards.mlapp` in 
+%     the Current Folder pane and selecting "Run".    
+% <br>
+% If you find an issue or have a suggestion, email the MathWorks online teaching team at
+% <a href="mailto:onlineteaching@mathworks.com">onlineteaching@mathworks.com</a>.
+% <br>
+% <br>
+% <h2> Related Courseware Modules </h2>    
+% <ol>
+%     <li> Calculus: Integrals, available on <a href="https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals">
+%         GitHub</a> or <a href="https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals">
+%         <img src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg"> </a> or 
+%         <a href="https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj"> 
+%         <img src="https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg"></a>
+%     </li>
+% </ol>
+% <h2> Prerequisites </h2>
+% Mathematically, this module assumes a knowledge of functions that is standard in precalculus course materials 
+%         regarding powers, exponentials, absolute values, logarithms, sines, cosines, rational functions, and 
+%         asymptotes. In addition, this module assumes basic fluency with limits in discussing the limit 
+%         definition of the derivative.
+% <br><br>
+% Minimal MATLAB fluency is required to use this module; primarily it is standard calculator-type mathematics 
+%         such as using * for multiplication and / for division. For commands that go beyond interacting with 
+%         a calculator, the necessary knowledge is included in the module. If you want to improve your MATLAB 
+%         knowledge, <a href="https://www.mathworks.com/learn/tutorials/matlab-onramp.html">MATLAB
+% Onramp</a> is a free two-hour introductory tutorial that teaches the essentials of MATLAB.
+% <br>
+% <br>
+% <h2> Getting Started </h2>
+% <ol>
+%     <li>
+%         Make sure that you have all the required products (listed below)
+%         installed. If you are missing a product, add it using the
+%         <a href="https://www.mathworks.com/products/matlab/add-on-explorer.html">
+%             Add-On Explorer.</a> To install an add-on, go to the <b>Home</b>
+%         tab and select <img src="../Images/add-ons.png" style="margin:0px;" height=12> <b> Add-Ons > Get Add-Ons</b>.
+%     </li>
+%         <li>
+%             Get started with each topic by clicking the link in the first column of the table below to access the
+%             full script example. The instructions inside each live script will walk
+%             you through the live scripts and related functions.
+%         </li>
+% </ol>
+% <h2> Products </h2>
+%     MATLAB&reg; and the Symbolic Math Toolbox&trade; are used throughout. Tools from the Curve Fitting Toolbox&trade; are used in <code>derivativeRulesTranscendentals.mlx</code>.
+% <br>
+% <br>
+% <h2> <a name="module"; style = "text-decoration: none; color: inherit">Scripts</a> </h2>
+% <table border=1 style="margin-left:20px; cellpadding:15px;">
+%     <caption><h3>Organization of the Calculus: Derivatives Module</h3></caption>
+%     <tr>
+%         <th scope="col">Topic
+%         </th>
+%         <th scope="col">In this script, students will...
+%         </th>
+%     </tr>
+%     <tr>
+%         <th scope="row">
+%             <a name="script1"; href="matlab:edit derivativeDefinition.mlx;"><b>Definition of the Derivative</b> 
+%              <br>
+%             <img src = "../Images/SecantTangent2.gif" width=150 style="margin-top:5px; margin-bottom:0px">
+%             </a>
+%         </th>              
+%         <td>
+%             <ul style="margin-top:5px; margin-bottom:10px">
+%                 <li> explain the limit definition of the derivative and its relationship to secant lines.</li>
+%                 <li> identify the sign of the derivative at a point as positive, negative, or zero 
+%                     based on the graph of a function. </li>
+%                 <li> identify points where the derivative of a continuous function does not exist 
+%                     and explain why with reference to the definition of the derivative.</li>
+%                 <li> recognize equivalent notation for the derivative. </li>
+%             </ul>
+%         </td>
+%     </tr>
+%     <tr>
+%         <th scope="row">
+%             <a name="script2"; href="matlab:edit derivativeRulesPowers.mlx;"><b>Power Rule for Derivatives</b> 
+%              <br>
+%             <img src = "../Images/DQsm.png" width=190 style="margin-top:5px; margin-bottom:0px">
+%             </a>
+%         </th>              
+%         <td>
+%             <ul style="margin-top:5px; margin-bottom:10px">
+%                 <li> explain why the limit definition of the derivative results in the power rule for derivatives.</li>
+%                 <li> compute the derivatives of linear combinations of powers by hand.</li>
+%                 <li> apply derivatives to solve practical questions.</li>
+%             </ul>
+%         </td>
+%     </tr>
+%     <tr>
+%         <th scope="row">
+%             <a name="script3"; href="matlab:edit derivativeRulesTranscendentals.mlx;"><b>Derivatives of Transcendental Functions</b> 
+%              <br>
+%             <img src = "../Images/DerivativeOfSine.png" width=150 style="margin-top:5px; margin-bottom:0px">
+%             </a>
+%         </th>              
+%         <td>
+%             <ul style="margin-top:5px; margin-bottom:10px">
+%                 <li> determine the functional relationship of the derivatives of sines, cosines, exponentials, and natural logarithms.</li>
+%                 <li> explain the pattern in the derivatives of sines, cosines, exponentials, and natural logarithms.</li>
+%             <li> apply the correct units to derivatives of any order. </li>
+% <li> explore simple first- and second-order differential equations that describe a physical system and use them to create mathematical models of the system. </li>
+%             </ul>
+%         </td>
+%     </tr>
+%     <tr>
+%         <th scope="row">
+%             <a name="script4"; href="matlab:edit derivativeRulesCombinations.mlx;"><b>Chain Rule and Product Rule</b> 
+%              <br>
+%             <img src = "../Images/productRuleIcon.png" width=150 style="margin-top:5px; margin-bottom:0px">
+%             </a>
+%         </th>              
+%         <td>
+%             <ul style="margin-top:5px; margin-bottom:10px">
+%                 <li>explain why the derivative of f of g of x with respect to x is 
+%                     the derivative of f with respect to g times the derivative of g with respect to x.</li>
+%                 <li> apply the chain rule to calculate derivatives.</li>
+%                 <li> explain why the derivative of f*g is the (derivative of f) times g plus the 
+%                     (derivative of g) times f.</li>
+%                 <li> apply the product rule to calculate derivatives.</li>
+%                 <li> practice fluently recognizing and applying the rules for computing derivatives. </li>
+%             </ul>
+%         </td>
+%     </tr>
+%     <tr>
+%         <th scope="row">
+%             <a name="script5"; href="matlab:edit TaylorPolynomials.mlx;"><b>Approximation using Taylor Polynomials</b> 
+%              <br>
+%             <img src = "../Images/taylorpolyexample.gif" width=150 style="margin-top:5px; margin-bottom:0px">
+%             </a>
+%         </th>              
+%         <td>
+%             <ul style="margin-top:5px; margin-bottom:10px">
+%                 <li>compute tangent lines.</li>
+%                 <li> compute quadratic approximations.</li>
+%                 <li> compute higher order polynomial approximations. </li>
+%             </ul>
+%         </td>
+%     </tr>
+%     <tr>
+%         <th scope="row">
+%             <a name="app"; href="matlab:run CalculusFlashcards.mlapp;"><b>Calculus Flashcards</b> 
+%              <br>
+%             <img src = "../Images/CalcFlashcardsPractice.png" width=150 style="margin-top:5px; margin-bottom:0px">
+%             </a>
+%         </th>              
+%         <td>
+%             <ul style="margin-top:5px; margin-bottom:10px">
+%                 <li> practice recognizing and solving standard computational problems in calculus. </li>
+%             </ul>
+%         </td>
+%     </tr>   
+% </table>
+% <br>
+% </span>
+% </span>
+% </html>
+% 
+% Copyright 2021-2022 The MathWorks(TM), Inc.
+
+##### SOURCE END #####
+--></body></html>
