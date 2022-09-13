@@ -115,6 +115,7 @@ The license for this module is available in the [LICENSE.md](LICENSE.md) file in
 **Calculus: Integrals** is available on [GitHub](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals) or 
 [![View Calculus-Integrals on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/105740-calculus-integrals) or
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Integrals&project=Integrals.prj)
+
 ## Educator Resources ##
 - [Featured Courseware](https://www.mathworks.com/academia/courseware/course-materials.html)
 - [Teach with MATLAB and Simulink](https://www.mathworks.com/academia/educators.html)
