@@ -12,7 +12,7 @@ The derivatives module is divided into four scripts and a practice app. The firs
 
 These lessons can be used as part of a lecture, as activities in an instructional setting, or as interactive assignments to be completed outside of class. All interactive exercises offer feedback while reflection questions are more open-ended and do not include solutions in this module. 
 
-The instructions inside the live scripts will guide you through the exercises, examples, and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the **Stop** button in the **Run** section of the **Live Editor** tab in the MATLAB Toolstrip.
+Loading the project file, Derivatives.prj, will add all of the required scripts to the path and open a navigation page. The instructions inside the live scripts will guide you through the exercises, examples, and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the **Stop** button in the **Run** section of the **Live Editor** tab in the MATLAB Toolstrip.
 
 ## Prerequisite Domain Knowledge ##
 This module assumes a knowledge of functions that is standard in precalculus course materials regarding powers, exponentials, absolute values, logarithms, sines, cosines, rational functions, and asymptotes. In addition, this module assumes basic fluency with limits in discussing the limit definition of the derivative.
