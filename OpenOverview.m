@@ -1,4 +1,7 @@
 function OpenOverview
+
+isMyProjectLoaded("Derivatives");
+
 % Open the overview file
 locDir = pwd;
 if contains(locDir,filesep+"MATLAB Drive")
