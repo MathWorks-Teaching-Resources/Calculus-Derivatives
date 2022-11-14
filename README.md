@@ -34,7 +34,7 @@ An interactive script that facilitates exploration of the limit definition of th
 - Recognize f'(x), df/dx, and d/dx[f(x)] as equivalent notation for the derivative of f with respect to x
 
 ## ##
-**`derivativeRulesPolynomials.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=derivativeRulesPolynomials.mlx)
+**`derivativeRulesPolynomials.mlx`** [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=derivativeRulesPowers.mlx)
 
 An interactive script that facilitates exploration of the results of applying the limit definition of the derivative to powers to identify the power rule for derivatives. After introducing the linearity rules, there is the opportunity to generate and check random problems to practice applying the linearity and power rules for derivatives and an application to parabolic motion. 
 
