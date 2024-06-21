@@ -84,7 +84,7 @@ MATLAB®  and the Symbolic Math Toobox™ are used throughout. Tools from the Cu
 | <img src="Images/taylorpolyexample.gif" width="171" alt="animation of Taylor polynomial approximation"> |-  compute tangent lines. <br>-  compute quadratic approximations. <br>-  compute higher order polynomial approximations.  |
 
 <a name="H_A8913F44"></a>
-# App: [Calculus Flashcards](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Apps/CalculusFlashcards&focus=true)
+# App: [Calculus Flashcards](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Apps/CalculusFlashcards.mlapp&focus=true)
 
 Practice recognizing and solving standard computational problems in calculus.
 
