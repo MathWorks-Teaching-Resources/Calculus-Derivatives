@@ -60,31 +60,31 @@ MATLAB®  and the Symbolic Math Toobox™ are used throughout. Tools from the Cu
 | <img src="https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives/blob/release/Images/SecantTangent2.gif" width="171" alt="Secant lines"> |-  explain the limit definition of the derivative and its relationship to secant lines. <br>-  identify the sign of the derivative at a point as positive, negative, or zero based on the graph of a function. <br>-  identify points where the derivative of a continuous function does not exist and explain why with reference to the definition of the derivative. <br>-  recognize $f^{\prime } (x)$ , $\frac{\textrm{d}f}{\textrm{d}x}$ , and $\frac{\textrm{d}}{\textrm{d}x}\left\lbrack f(x)\right\rbrack$ as equivalent notation for the derivative of $f$ with respect to $x$ .  |
 
 <a name="H_77AFFCCB"></a>
-## [Derivatives of Polynomials](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/PowerRules.mlx)
+## [Derivatives of Polynomials](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/PowerRules.mlx&focus=true)
 | **<samp>PowerRules.mlx</samp>** | **In this script, students will...**  |
 | :-- | :-- |
 | <img src="Images/image_4.png" width="171" alt="image_4.png"> |-  explain why the limit definition of the derivative results in the power rule for derivatives. <br>-  compute the derivatives of linear combinations of powers by hand. <br>-  apply derivatives to solve practical questions.  |
 
 <a name="H_9F419170"></a>
-## [Derivatives of Transcendental Functions](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/TranscendentalsRules.mlx)
+## [Derivatives of Transcendental Functions](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/TranscendentalsRules.mlx&focus=true)
 | **<samp>TranscendentalsRules.mlx</samp>** | **In this script, students will...**  |
 | :-- | :-- |
 | <img src="https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives/blob/release/Images/DerivativeOfSine.png" width="171" alt="Numerical derivative of sine"> |-  determine the functional relationship of the derivatives of sines, cosines, exponentials, and natural logarithms. <br>-  explain the pattern in the derivatives of $\sin (ax)$ , $\cos (ax)$ , and $\exp (ax)$ for constant values of $a$ and that the derivative of $\ln (ax)$ does not fit the simple pattern. <br>-  apply the correct units to derivatives of any order. <br>-  explore simple first- and second-order differential equations that describe a physical system and use them to create mathematical models of the system.  |
 
 <a name="H_DBF5C0DF"></a>
-## [Chain Rule and Product Rule](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/TranscendentalsRules.mlx)
+## [Chain Rule and Product Rule](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/TranscendentalsRules.mlx&focus=true)
 | **<samp>CombinationRules.mlx</samp>** | **In this script, students will...**  |
 | :-- | :-- |
 | <img src="https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives/blob/release/Images/productRuleIcon.png" width="171" alt="product rule"> |-  explain why the chain rule is $\frac{\textrm{d}}{\textrm{d}x}\left\lbrack f(g(x))\right\rbrack =f^{\prime } (g(x)) \cdot g^{\prime } (x)$ . <br>-  apply the chain rule to calculate derivatives. <br>-  explain why the product rule is $\frac{\textrm{d}}{\textrm{d}x}\left\lbrack f(x)\cdot g(x)\right\rbrack =f(x)\cdot \frac{\textrm{d}g}{\textrm{d}x}+\frac{\textrm{d}f}{\textrm{d}x}\cdot g(x)$ . <br>-  apply the product rule to calculate derivatives. <br>-  practice fluently recognizing and applying the rules for computing derivatives.  |
 
 <a name="H_98D870A0"></a>
-## [Taylor Polynomials](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/TaylorPolynomials.mlx)
+## [Taylor Polynomials](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/TaylorPolynomials.mlx&focus=true)
 | **<samp>TaylorPolynomials.mlx</samp>** | **In this script, students will...**  |
 | :-- | :-- |
 | <img src="Images/taylorpolyexample.gif" width="171" alt="animation of Taylor polynomial approximation"> |-  compute tangent lines. <br>-  compute quadratic approximations. <br>-  compute higher order polynomial approximations.  |
 
 <a name="H_A8913F44"></a>
-# App: [Calculus Flashcards](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Apps/CalculusFlashcards)
+# App: [Calculus Flashcards](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Apps/CalculusFlashcards&focus=true)
 
 Practice recognizing and solving standard computational problems in calculus.
 
