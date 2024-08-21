@@ -54,7 +54,7 @@ MATLAB®  and the Symbolic Math Toobox™ are used throughout. Tools from the Cu
 <a name="H_E8C62B23"></a>
 # Scripts
 <a name="H_727F8117"></a>
-## [The Definition of the Derivative](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/Definition.mlx)
+## [The Definition of the Derivative](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/Definition.mlx&focus=true)
 | **<samp>Definition.mlx</samp>** | **In this script, students will...**  |
 | :-- | :-- |
 | <img src="https://github.com/MathWorks-Teaching-Resources/Calculus-Derivatives/blob/release/Images/SecantTangent2.gif" width="171" alt="Secant lines"> |-  explain the limit definition of the derivative and its relationship to secant lines. <br>-  identify the sign of the derivative at a point as positive, negative, or zero based on the graph of a function. <br>-  identify points where the derivative of a continuous function does not exist and explain why with reference to the definition of the derivative. <br>-  recognize $f^{\prime } (x)$ , $\frac{\textrm{d}f}{\textrm{d}x}$ , and $\frac{\textrm{d}}{\textrm{d}x}\left\lbrack f(x)\right\rbrack$ as equivalent notation for the derivative of $f$ with respect to $x$ .  |
