@@ -40,7 +40,7 @@ jobs:
           release: ${{ matrix.MATLABVersion }}
           products: >
             Symbolic_Math_Toolbox
-            Curve Fitting Toolbox
+            Curve_Fitting_Toolbox
           # Simulink Statistics_and_Machine_Learning_Toolbox
           # List required products above in the format shown (and uncomment them)
           # List of product strings:
