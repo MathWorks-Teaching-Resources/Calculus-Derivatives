@@ -1,0 +1,7 @@
+Name,Passed,Failed,Incomplete,Duration,Details
+SmokeTests[Project=0x0_char]/SmokeRun(Scripts=CombinationRules.mlx),1,0,0,0.0593681,
+SmokeTests[Project=0x0_char]/SmokeRun(Scripts=Definition.mlx),1,0,0,0.0005363,
+SmokeTests[Project=0x0_char]/SmokeRun(Scripts=PowerRules.mlx),1,0,0,76.614643,
+SmokeTests[Project=0x0_char]/SmokeRun(Scripts=TaylorPolynomials.mlx),1,0,0,0.0017762,
+SmokeTests[Project=0x0_char]/SmokeRun(Scripts=TranscendentalsRules.mlx),1,0,0,5.1318311,
+FunctionTests/RunShowTaylor,1,0,0,3.5908922,
