@@ -74,7 +74,7 @@ MATLAB®  and the Symbolic Math Toobox™ are used throughout. Tools from the Cu
 | <img src="Images/DerivativeOfSine.png" width="171" alt="DerivativeOfSine.png"> <br>  | $\bullet$ determine the functional relationship of the derivatives of sines, cosines, exponentials, and natural logarithms. <br> $\bullet$ explain the pattern in the derivatives of $\sin (ax)$ , $\cos (ax)$ , and $\exp (ax)$ for constant values of $a$ and that the derivative of $\ln (ax)$ does not fit the simple pattern. <br> $\bullet$ apply the correct units to derivatives of any order. <br> $\bullet$ explore simple first\- and second\-order differential equations that describe a physical system and use them to create mathematical models of the system. <br>   |
 |      |       |
 
-## [Chain Rule and Product Rule](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/TranscendentalsRules.mlx)
+## [Chain Rule and Product Rule](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Calculus-Derivatives&project=Derivatives.prj&file=Scripts/CombinationRules.mlx)
 |      |      |
 | :-- | :-- |
 | **<samp>CombinationRules.mlx</samp>** <br>  | **In this script, students will...** <br>   |
