@@ -1,8 +1,3 @@
-% Run these tests with 
-% runMyTests
-% OR
-% results = runtests(tLibrary)
-% table(results)
 classdef FunctionTests < matlab.unittest.TestCase
 
     methods(Test)
@@ -16,5 +11,27 @@ classdef FunctionTests < matlab.unittest.TestCase
         end
 
     end % methods
+
+    methods(TestMethodTeardown)
+
+        function cleanUpFigures(testCase)
+            figures = findall(groot, 'Type', 'figure');
+            figures = flipud(figures);
+            if ~isempty(figures)
+                for iFigure = 1:size(figures, 1)
+                    if ~isempty(figures(iFigure).Number)
+                        figDiag = matlab.unittest.diagnostics.FigureDiagnostic(figures(iFigure), 'Formats', 'png');
+                        log(testCase, 1, figDiag);
+                    end
+                end
+            end
+
+            % Cleanup avoids cross-test contamination in desktop and CI runs.
+            close all force
+            if any(matlab.addons.installedAddons().Name == "Simulink")
+                bdclose all
+            end
+        end
+    end  % TestMethodTeardown
 
 end % classdef
