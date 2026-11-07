@@ -1,3 +1,3 @@
-%  Post-run script for TranscendentalsRules.mlx
+%  Post-run script for TranscendentalsRules.m
 % ---- Post-run commands -----
- 
+% <matlab:ShareFeedback Share your feedback>

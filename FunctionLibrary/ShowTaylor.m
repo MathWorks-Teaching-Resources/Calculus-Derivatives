@@ -8,7 +8,7 @@
 %[text] - `T`, the computed Taylor polynomial of degree `deg` for function `fh` around a center point `x0` \
 %[text] `ShowTaylor` creates and displays a plot of the original function and its approximates of order `deg`. If `deg` is a vector, then each approximation is displayed for 0.2 seconds to animate the series. This is intended to be used to watch approximations improving with increasing order, but it is not limited to that. 
 %[text] ## Example
-%[text] `ShowTaylor(@cos,[3,7,15],[-2*pi 2*pi],0)` graphs the function $y=\\cos(x)${"altText":"y=\cos(x)"} over the domain $x \\in \[-2\\pi,2\\pi\]${"altText":"x \in \[-2\pi,2\pi\]"}. Then it computes the Taylor polynomials of degree three, seven, and fifteen, and produces three plots:
+%[text] `ShowTaylor(@cos,[3,7,15],[-2*pi 2*pi],0)` graphs the function $y=\\cos(x)${"altText":"y=cos(x)"} over the domain $x \\in \[-2\\pi,2\\pi\]${"altText":"x in \[-2pi,2pi\]"}. Then it computes the Taylor polynomials of degree three, seven, and fifteen, and produces three plots:
 %[text]{"align":"center"} ![A graph of y=cos(x) overlayed by a graph of the third-order Taylor polynomial y_3 which overlaps well in [-0.5,0.5] and follows the trend for [-1.5,1.5].](text:image:9eea)![A plot of y=cos(x) overlayed with the 7th order Taylor polynomial y_7 which agrees well on [-2,2] and follows the trend on [-3,3].](text:image:6392)![A plot of y=cos(x) overlayed with the 15th order Taylor polynomial y_{15} which agrees well on [-5.8,5.8] and follows the trend in the region shown.](text:image:19b1)
 function T = ShowTaylor(fh,deg,bds,x0)
 arguments
